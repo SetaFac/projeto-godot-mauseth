@@ -4,11 +4,17 @@ using System.Collections.Generic;
 
 public enum PlayerStates {NORMAL, HITTED, DEAD};
 
-public partial class Player : CharacterBody2D
+public partial class Player : CharacterBody2D, Entity
 {
 	public delegate void VitalPlayerHandler();
+	
 	public event VitalPlayerHandler OnHealthChange;
+	public event VitalPlayerHandler OnLifeChange;
+	public event VitalPlayerHandler OnDied;
 
+
+	public string DisplayName{get;} = "Player";
+	public string Description{get;} = "Personagem principal do jogador!";
 
 	public const float Speed = 300.0f;
 	public const float JumpVelocity = -400.0f;
@@ -17,6 +23,8 @@ public partial class Player : CharacterBody2D
 	private Dictionary<string, Timer> cooldown;
 	private PlayerStates vitalState = PlayerStates.NORMAL;
 
+	private int maxLife = 2;
+	private int life = 0;
 	private int maxHealth = 100;
 	private int health = 0;
 	private int x_dir = 1;
@@ -28,6 +36,8 @@ public partial class Player : CharacterBody2D
 		base._Ready();
 
 		health = maxHealth;
+		life = maxLife;
+
 		cooldown = new Dictionary<string, Timer>()
 		{
 			{"HITTED", new Timer(){WaitTime=1, Autostart=false, OneShot=true}}
@@ -75,6 +85,8 @@ public partial class Player : CharacterBody2D
 
 	public void TakeDamage(int damage)
 	{
+		if(vitalState == PlayerStates.HITTED) return;
+
 		vitalState = PlayerStates.HITTED;
 		Health -= damage;
 		cooldown["HITTED"].Start();
@@ -82,12 +94,39 @@ public partial class Player : CharacterBody2D
 		sprite.PlayEffect();
 	}
 
+	public int MaxLife
+	{
+		get => maxLife;
+		set
+		{
+			value = Math.Max(value, 0);
+			maxLife = value;
+		}
+	}
+
+	public int Life
+	{
+		get => life;
+		set
+		{
+			life = value;
+			OnLifeChange?.Invoke();
+		}
+	}
+
+	public int MaxHealth
+	{
+		get => maxHealth;
+		set
+		{
+			value = Math.Max(value, 0);
+			maxHealth = value;
+		}
+	}
+
 	public int Health
 	{
-		get
-		{
-			return health;
-		}
+		get => health;
 		set
 		{
 			value = Math.Min(value, maxHealth);

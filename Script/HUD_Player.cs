@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class HudPlayer : CanvasLayer
+public partial class HUD_Player : CanvasLayer
 {	
 	private Player focusPlayer = null;
 	private TextureProgressBar healthBar = null;
@@ -14,7 +14,6 @@ public partial class HudPlayer : CanvasLayer
 			QueueFree();
 			return;
 		}
-
 		healthBar = GetNode<TextureProgressBar>("HealthBar");
 		focusPlayer.OnHealthChange += __update_player_health;
 	}

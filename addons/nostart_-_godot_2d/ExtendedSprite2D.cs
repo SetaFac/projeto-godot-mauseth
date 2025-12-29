@@ -11,6 +11,7 @@ public enum EffectLoaderState {STOPPED, PLAYING, LOADED, UNLOADED};
 /// This node extends of Sprite2D adding new animated effects features. Allowing set and load one of 
 /// three animated effect types: BLINK, WHITE BLINK, FADE.
 /// </summary>
+
 [Tool, Icon("res://addons/nostart_-_godot_2d/ExtendedSprite2D.png")]
 public partial class ExtendedSprite2D : Sprite2D
 {
@@ -19,6 +20,7 @@ public partial class ExtendedSprite2D : Sprite2D
 
 	private Sprite2D originalState = null;
 	private bool started = false;
+	
 	private float tax_fade_alpha = 0.2f;
 	private float fade_alpha;
 

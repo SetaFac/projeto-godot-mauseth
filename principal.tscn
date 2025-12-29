@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bg6yyu6e2rjk7"]
+[gd_scene load_steps=6 format=3 uid="uid://bg6yyu6e2rjk7"]
 
 [ext_resource type="PackedScene" uid="uid://b8eoqug753ueq" path="res://Object/Player.tscn" id="2_m7tbw"]
 [ext_resource type="PackedScene" uid="uid://c26tnax3agjsm" path="res://Object/red_block_indestructible.tscn" id="2_rrtif"]
-[ext_resource type="Texture2D" uid="uid://b2q7mmhq01dkb" path="res://engine-graphics-ropog/HUD/LIfe/background_life_bar.png" id="3_7cuts"]
-[ext_resource type="Texture2D" uid="uid://dc551w763xigt" path="res://engine-graphics-ropog/HUD/HUD/LIfe/life_bar.png" id="4_emcp4"]
+[ext_resource type="PackedScene" uid="uid://dmap1mfo306xk" path="res://Object/HUD/HUD_Player.tscn" id="4_7cuts"]
+[ext_resource type="PackedScene" uid="uid://j56pib157eox" path="res://Object/Pike.tscn" id="5_emcp4"]
+[ext_resource type="PackedScene" uid="uid://2j802j35pyc8" path="res://Object/HealStar.tscn" id="5_ep5lw"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,24 +14,21 @@ position = Vector2(583, 411)
 [node name="Collision" type="Node2D" parent="."]
 
 [node name="RedBlockIndestructible" parent="Collision" instance=ExtResource("2_rrtif")]
-position = Vector2(573, 618)
+position = Vector2(568, 624)
 scale = Vector2(36.44445, 1.579375)
 
 [node name="RedBlockIndestructible2" parent="Collision" instance=ExtResource("2_rrtif")]
-position = Vector2(743, 569.00006)
+position = Vector2(744, 576)
 scale = Vector2(1.5347365, -1.4685816)
 
 [node name="RedBlockIndestructible3" parent="Collision" instance=ExtResource("2_rrtif")]
-position = Vector2(829.99994, 505)
+position = Vector2(823.99994, 520)
 scale = Vector2(1.7044392, 1.6767223)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="HudPlayer" parent="." instance=ExtResource("4_7cuts")]
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
-texture_filter = 1
-offset_right = 128.0
-offset_bottom = 40.0
-scale = Vector2(2.7305715, 2.7305715)
-value = 100.0
-texture_under = ExtResource("3_7cuts")
-texture_progress = ExtResource("4_emcp4")
+[node name="Pike" parent="." instance=ExtResource("5_emcp4")]
+position = Vector2(223, 589)
+
+[node name="HealStar" parent="." instance=ExtResource("5_ep5lw")]
+position = Vector2(98, 567)

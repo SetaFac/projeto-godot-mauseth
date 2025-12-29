@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://j56pib157eox"]
+
+[ext_resource type="Texture2D" uid="uid://sc4k4oyledl5" path="res://engine-graphics-ropog/Items/Obstacles/spikes.png" id="1_l3b3y"]
+[ext_resource type="Script" uid="uid://dkd3f4et3ivd0" path="res://Script/OBS_Pike.cs" id="1_ybyyw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pklb"]
+size = Vector2(13, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybyyw"]
+size = Vector2(13, 26)
+
+[node name="Pike" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_ybyyw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+position = Vector2(0, -6)
+texture = ExtResource("1_l3b3y")
+
+[node name="Damage" type="Area2D" parent="."]
+
+[node name="DmgCollision" type="CollisionShape2D" parent="Damage"]
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_7pklb")
+debug_color = Color(0.762465, 0.30806488, 0.018688016, 0.41960785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_ybyyw")
