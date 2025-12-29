@@ -1,15 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://bg6yyu6e2rjk7"]
+[gd_scene load_steps=7 format=3 uid="uid://bg6yyu6e2rjk7"]
 
 [ext_resource type="PackedScene" uid="uid://b8eoqug753ueq" path="res://Object/Player.tscn" id="2_m7tbw"]
 [ext_resource type="PackedScene" uid="uid://c26tnax3agjsm" path="res://Object/red_block_indestructible.tscn" id="2_rrtif"]
 [ext_resource type="PackedScene" uid="uid://dmap1mfo306xk" path="res://Object/HUD/HUD_Player.tscn" id="4_7cuts"]
 [ext_resource type="PackedScene" uid="uid://j56pib157eox" path="res://Object/Pike.tscn" id="5_emcp4"]
 [ext_resource type="PackedScene" uid="uid://2j802j35pyc8" path="res://Object/HealStar.tscn" id="5_ep5lw"]
+[ext_resource type="PackedScene" uid="uid://bm1xtchbv4tfh" path="res://Object/PickUpItems/PUI_Sword.tscn" id="6_ep5lw"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_m7tbw")]
-position = Vector2(583, 411)
+position = Vector2(655, 415)
 
 [node name="Collision" type="Node2D" parent="."]
 
@@ -32,3 +33,6 @@ position = Vector2(223, 589)
 
 [node name="HealStar" parent="." instance=ExtResource("5_ep5lw")]
 position = Vector2(98, 567)
+
+[node name="PuiSword" parent="." instance=ExtResource("6_ep5lw")]
+position = Vector2(476, 583)

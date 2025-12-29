@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public enum PlayerStates {NORMAL, HITTED, DEAD};
 
-public partial class Player : CharacterBody2D, Entity
+public partial class Player : CharacterBody2D, IEntity
 {
 	public delegate void VitalPlayerHandler();
 	

@@ -1,4 +1,4 @@
-public interface Entity
+public interface IEntity
 {
     public string DisplayName{get;}
     public string Description{get;}

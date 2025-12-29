@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public partial class OBS_Pike : StaticBody2D
 {
-	private List<Entity> entityToDamage = new List<Entity>();
+	private List<IEntity> entityToDamage = new List<IEntity>();
 	private Area2D dmgCollision = null;
 
 	public const int DAMAGE = 20;

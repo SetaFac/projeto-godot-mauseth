@@ -13,7 +13,7 @@ public partial class DROP_HealStar : Area2D
 
 	private void __heal_entity(Node other)
 	{
-		Entity entity = other as Entity;
+		IEntity entity = other as IEntity;
 		if(entity != null)
 		{
 			if(entity.Health >= entity.MaxHealth) return;
