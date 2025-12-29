@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8eoqug753ueq"]
+
+[ext_resource type="Texture2D" uid="uid://drco2nvl6lwy8" path="res://engine-graphics-ropog/place-holding/Characters/player.png" id="1_62nw6"]
+[ext_resource type="Script" uid="uid://c5nf6a7wxx1dl" path="res://Script/Player.cs" id="1_l8tau"]
+[ext_resource type="Script" uid="uid://c2hhk8c662bb8" path="res://addons/nostart_-_godot_2d/ExtendedSprite2D.cs" id="3_e5oj2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8tau"]
+size = Vector2(32, 32)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_l8tau")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l8tau")
+
+[node name="Camera" type="Camera2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_62nw6")
+script = ExtResource("3_e5oj2")
+metadata/_custom_type_script = "uid://c2hhk8c662bb8"

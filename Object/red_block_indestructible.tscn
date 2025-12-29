@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c26tnax3agjsm"]
+
+[ext_resource type="Texture2D" uid="uid://clsa0r1rehsc0" path="res://engine-graphics-ropog/place-holding/Floor/indestructble_floor.png" id="1_wkcrq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqxfi"]
+size = Vector2(32, 32)
+
+[node name="RedBlockIndestructible" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iqxfi")
+debug_color = Color(0.78617346, 0, 0.13276687, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wkcrq")
