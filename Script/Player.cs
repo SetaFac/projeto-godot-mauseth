@@ -94,6 +94,11 @@ public partial class Player : CharacterBody2D, IEntity
 		sprite.PlayEffect();
 	}
 
+	public void GiveItem(IItem item)
+	{
+		
+	}
+
 	public int MaxLife
 	{
 		get => maxLife;

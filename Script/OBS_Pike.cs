@@ -18,7 +18,7 @@ public partial class OBS_Pike : StaticBody2D
 	public override void _Process(double delta)
 	{
 		if(entityToDamage.Count <= 0) return;
-		foreach(Entity e in entityToDamage)
+		foreach(IEntity e in entityToDamage)
 		{
 			e.TakeDamage(DAMAGE);
 		}
@@ -26,7 +26,7 @@ public partial class OBS_Pike : StaticBody2D
 
 	private void __mark_to_deal_damage(Node other)
 	{
-		Entity entity = other as Entity;
+		IEntity entity = other as IEntity;
 		if(entity != null)
 		{
 			entityToDamage.Add(entity);
@@ -35,7 +35,7 @@ public partial class OBS_Pike : StaticBody2D
 
 	private void __remove_damage_mark(Node other)
 	{
-		Entity entity = other as Entity;
+		IEntity entity = other as IEntity;
 		if(entity != null)
 		{
 			if(!entityToDamage.Contains(entity)) return;

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bm1xtchbv4tfh"]
 
 [ext_resource type="Texture2D" uid="uid://dxqfvqt36gnj3" path="res://engine-graphics-ropog/Items/Craved/craved_normal_sword.png" id="1_ch2jt"]
-[ext_resource type="Script" uid="uid://dx0ubbwveth8u" path="res://Script/PickUpScripts/PuiSword.cs" id="1_fla0m"]
+[ext_resource type="Script" uid="uid://dx0ubbwveth8u" path="res://Script/PickUpScripts/PUI_Sword.cs" id="1_fla0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fla0m"]
 size = Vector2(22, 26)
@@ -9,7 +9,7 @@ size = Vector2(22, 26)
 [node name="PuiSword" type="Area2D"]
 script = ExtResource("1_fla0m")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="PickUpArea" type="CollisionShape2D" parent="."]
 z_index = 1
 position = Vector2(-1, 3)
 shape = SubResource("RectangleShape2D_fla0m")
