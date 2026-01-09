@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G/6FWNzdmVgUNWlPFMrYzS8mWJP81gpx66di+uWHpyU6MGSrQju1qXyhc9ikswvDFBUYCRH2qYhAvv7smucMNA==",
+  "success": true,
+  "projectFilePath": "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/nostart-framework-godot.csproj",
+  "expectedPackageFiles": [
+    "/home/protocolo-fac-mauseth/.nuget/packages/godotsharp/4.5.1/godotsharp.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

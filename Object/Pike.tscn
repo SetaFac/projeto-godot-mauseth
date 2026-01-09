@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://j56pib157eox"]
 
 [ext_resource type="Texture2D" uid="uid://sc4k4oyledl5" path="res://engine-graphics-ropog/Items/Obstacles/spikes.png" id="1_l3b3y"]
-[ext_resource type="Script" uid="uid://dkd3f4et3ivd0" path="res://Script/OBS_Pike.cs" id="1_ybyyw"]
+[ext_resource type="Script" uid="uid://dkd3f4et3ivd0" path="res://Script/Obstacles/OBS_Pike.cs" id="1_ybyyw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7pklb"]
 size = Vector2(13, 26)

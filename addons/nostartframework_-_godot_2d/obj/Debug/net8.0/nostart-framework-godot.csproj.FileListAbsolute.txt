@@ -1,0 +1,13 @@
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/bin/Debug/net8.0/nostart-framework-godot.deps.json
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/bin/Debug/net8.0/nostart-framework-godot.dll
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/bin/Debug/net8.0/nostart-framework-godot.pdb
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.csproj.AssemblyReference.cache
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.GeneratedMSBuildEditorConfig.editorconfig
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.AssemblyInfoInputs.cache
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.AssemblyInfo.cs
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.csproj.CoreCompileInputs.cache
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.sourcelink.json
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.dll
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/refint/nostart-framework-godot.dll
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/nostart-framework-godot.pdb
+/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/Debug/net8.0/ref/nostart-framework-godot.dll

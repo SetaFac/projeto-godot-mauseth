@@ -3,15 +3,15 @@ using System.Linq;
 
 public partial class PUI_Sword : Area2D, IItem
 {
-    string IItem.Name => "Broken Craved Sword";
+	string IItem.Name => "Broken Craved Sword";
 
-    public string Description => "A half part of a craved sword.";
+	public string Description => "A half part of a craved sword.";
 
-    public double Price => 2000.00;
+	public double Price => 2000.00;
 
-    public string ItemSprite => "";
+	public string ItemSprite => "";
 
-    public override void _Ready()
+	public override void _Ready()
 	{
 	}
 

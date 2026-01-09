@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/nostart-framework-godot.csproj": {}
+  },
+  "projects": {
+    "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/nostart-framework-godot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/nostart-framework-godot.csproj",
+        "projectName": "nostart-framework-godot",
+        "projectPath": "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/nostart-framework-godot.csproj",
+        "packagesPath": "/home/protocolo-fac-mauseth/.nuget/packages/",
+        "outputPath": "/home/protocolo-fac-mauseth/Documents/godot-workspace/nostart-framework-godot/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/protocolo-fac-mauseth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GodotSharp": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
